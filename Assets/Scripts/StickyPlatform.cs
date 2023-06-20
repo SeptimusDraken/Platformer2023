@@ -27,7 +27,7 @@ public class StickyPlatform : MonoBehaviour
         if (collision.gameObject.name == "Player")
         {
             collision.gameObject.transform.SetParent(transform);
-            Debug.Log("I have a parent");
+            //Debug.Log("I have a parent");
         }
     }
 
@@ -36,7 +36,7 @@ public class StickyPlatform : MonoBehaviour
         if (collision.gameObject.name == "Player")
         {
             collision.gameObject.transform.SetParent(null);
-            Debug.Log("I don't have a parent");
+            //Debug.Log("I don't have a parent");
         }
     }
 }

@@ -7,6 +7,10 @@ TagManager:
   - Cherry
   - Trap
   - Enemy
+  - Banana
+  - Kiwi
+  - Orange
+  - Pineapple
   layers:
   - Default
   - TransparentFX
