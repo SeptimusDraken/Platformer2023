@@ -29,8 +29,6 @@ public class ItemCollector : MonoBehaviour
     [SerializeField] private AudioSource collectOrange;
     [SerializeField] private AudioSource collectPineapple;
 
-    [SerializeField] private AudioSource outOfTimeSound;
-
 
     private void Start()
     {
@@ -64,7 +62,6 @@ public class ItemCollector : MonoBehaviour
 
     private void Die()
     {
-            outOfTimeSound.Play();
             rb.bodyType = RigidbodyType2D.Static;
             pl.SetActive(false);
             Invoke ("RestartLevel",  4f);
